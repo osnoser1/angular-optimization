@@ -12,7 +12,7 @@ import { NumberToStringPipe } from './core/pipes/number-to-string.pipe';
 @NgModule({
   declarations: [AppComponent, NumberToStringPipe],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     BrowserAnimationsModule,
     FlexLayoutModule,
     MatButtonModule,
